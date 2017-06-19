@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+        <title>Nate's GeoLocate</title>
+    </head>
+    <body>
+        <header>
+            <div><h1>Introduction Page for GeoLocate</h1></div>
+            <div>
+                <nav>
+                    <span class="navi"><a href="/">HOME</a></span>
+                    <span class="navi"><a href="/about/">ABOUT</a></span>
+                </nav>
+            </div>
+        </header>
+
+        <section>
+            <p>
+                Enter a place that you want find. You can search a city, state, province, country, or any random name you want. The search will return the place most likely related to the place you're looking for, based on the searches and result of other users across the internet.
+            </p>
+        </section>
+        <br>
+        <br>
+        <form action="{{ url_for('result_page')}}" method="POST">
+            <div id="search">
+                <input type="text" name="location" autofocus size="50" />
+                <input type="submit" name="action" value="Search">
+            </div>
+        </form>
+        <br>
+        <br>
+        <div><span class="copy">Copyright &copy;2017 Nathaniel Brown</span></div>
+    </body>
+</html>
