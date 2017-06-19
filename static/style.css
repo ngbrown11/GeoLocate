@@ -25,6 +25,9 @@ a {
 a:hover {
     font-weight: bold;
 }
+.speciallink {
+    font-size: 1em;
+}
 
 section {
     text-align: justify;
@@ -45,6 +48,21 @@ section {
 
 #searchBtn {
     margin-left: 10px;
+}
+
+table {
+    border: 2px solid #023484;
+    border-collapse: collapse;
+    width: 75%;
+    max-width: 600px;
+    margin: auto;
+}
+thead, tbody {
+    border: 1px solid #023484;
+}
+th, td {
+    height: 2em;
+    padding: 0.8em;
 }
 
 .copy {
